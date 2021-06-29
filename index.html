@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Sistema  FastParking</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Sistema FastParking
+        </h1>
+            <img src="Untitled.png" alt="logoTipo FastParking">
+    </header>
+    <main class="main">
+        <div class="form_inputs" id="form_inputs">
+            <form class="form" id="inputs">
+                <label class="label-nome" for="nome">Nome:</label>
+                <input class="inputs" type="text" id="nome"  placeholder="Nome" data-index= "">
+
+                <label class="label-placa" for="placa">Placa:</label>
+                <input class="inputs" type="text" id="placa"  data-index=""  maxlength="10" placeholder="Placa">
+            </form>
+            <footer class="footer-button">
+                <button type="submit" class="button green" id="adicionar">Adicionar</button>
+                <button type="button" class="button red" id="precos" onclick="javascript:window.location.href='preco.html'">Preços</button>
+            </footer>
+        </div>
+    </main>
+    <table class="table" id="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Placa</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="modal" id="modal_comprov">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h1>comprovante</h1>
+                <span class="close-button" id="close">&#10006;</span>
+            </header>
+            <form class="form" id="form_comprovante">
+                <div>
+                    <label class="labels" >Nome:</label>
+                    <input  class="inputs-comp" id="nome" readonly />
+                </div>
+                <div>
+                    <label class="labels" >Placa:</label>
+                     <input  class="inputs-comp" readonly />
+                </div>
+                <div>
+                    <label  class="labels">Data:</label>
+                     <input class="inputs-comp" readonly />
+                </div>
+                <div>
+                    <label class="labels">Hora:</label>
+                     <input class="inputs-comp"readonly />
+                </div>
+            </form>
+            <footer class="modal-footer">
+                <button type="submit" class="button green" id="imprimir" onclick="window.print()">Imprimir</button>
+                <button type="button" class="button red" id="cancelar">Cancelar</button>
+            </footer>
+        </div>
+    </div>  
+    <footer class="footer">
+        &copy; Thamires Amancio
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html

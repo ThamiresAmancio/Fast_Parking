@@ -1,0 +1,301 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+body main {
+    flex-grow: 1;
+}
+
+.header{
+
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+img{
+    float: right;
+    margin-top: -120px;
+}
+
+h1{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color: #002171;
+
+}
+
+.main{
+        display: flex;
+        justify-content: center;
+        /* padding: 30px; */
+        gap: 50px; 
+}
+
+h2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+
+    height: 1000px;
+    align-items: center;
+}
+
+.form_inputs{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40vw;
+    height: 340px;
+    margin: 15vh auto;
+    background-color: white;
+    border:solid 2px black;
+    border-radius: 5px;
+
+}
+
+
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+
+}
+
+.inputs {
+    width: 100%;
+    height: 20px;
+    padding: 0 16px;
+    font-size: 16px;
+    border-radius: 3px;
+    border-style: none;
+    outline-style: none;
+    border: 2px solid #ccc;
+    
+
+}
+
+.label-nome{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+
+
+.label-placa{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+
+}
+
+
+.footer-button{
+    text-align: center;
+    height: px;
+    gap: 20px;
+    border-radius: 0 0 5px 5px;
+    padding: 0 30px;
+    background-color: inherit;
+}
+
+.button{
+    border-style: none;
+    padding: 0 40px;
+    min-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+.button.red {
+    background-color: #ff4949;
+}
+
+.button.red:hover{
+    cursor: pointer;
+    color: cadetblue;
+}
+
+.button.blue {
+    background-color: #1fb6ff
+}
+
+.button.green {
+    background-color: #13CE66
+}
+
+.button.dark {
+    background-color: #343a40
+}
+.button.orange {
+    background-color: orange;
+}
+
+
+
+.table {
+    height: 50px;
+    text-align: left;
+    border-collapse: collapse;
+    user-select: none;
+}
+
+.table thead {
+    background-color: #002171;
+    color: #ffff;
+    height: 50px;
+}
+
+.table thead th,
+.table tbody td {
+    padding: 0 20px;
+}
+.table tbody td {
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table thead th:last-child,
+.table tbody td:last-child{
+    min-width: 250px;
+    text-align: center;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000090;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+    opacity: 0;
+    user-select: none;
+    transition: all .3s;
+}
+
+.active {
+    z-index: 5000;
+    opacity: 1;
+}
+
+.modal-content {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+
+    margin: 20vh auto;
+    
+    background-color: white;
+    border-radius: 5px;
+    border: solid 2px black;
+}
+
+.modal-footer {
+    display: flex;
+    
+    gap: 40px;
+    margin: 0 auto 30px;
+    
+    border-radius: 0 0 5px 5px;
+    padding: 0 20px;
+    background-color: inherit;
+    
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #DDDDDD;
+    border-radius: 5px 5px 0 0;
+    background-color: inherit;
+}
+
+.modal-header > h1 {
+    margin: 0 auto;
+    color: black;
+    font-weight: normal;
+    text-shadow: 0px 0px 1px grey;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 30px;
+    margin: 40px auto;
+}
+.form div{
+    /* width: 300px; */
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.input-form{
+    width: calc(40px + 10vw);
+    height: 30px;
+    padding: 0 3px;
+    font-size: 14px;
+    border-radius: 3px;
+    outline-style: none;
+    border: 1px solid #919191;
+}
+.input-form:focus {
+    border: 2px solid #1fb6ff;
+}
+
+.inputs-comp{
+    border-style: none;
+    border-bottom: solid 1px black;
+}
+
+.inputs-comp{
+    outline-style: none;
+    border-bottom: solid 1px black;
+}
+
+.close-button {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 40px;
+    color: lightslategray;
+}
+
+
+
+
+.footer{
+    height: 50px;
+    background-color: #002171;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 100px;
+}
+
+
+
